@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8" />
 	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/Mr.png">
@@ -12,189 +13,206 @@
 
 	<!--     Fonts and icons     -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
 
 	<!-- CSS Files -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/material-kit.css" rel="stylesheet"/>
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/css/bootstrap.css" rel="stylesheet" />
+	<link href="assets/css/material-kit.css" rel="stylesheet" />
 
 	<!-- CSS Just for demo purpose, don't include it in your project -->
 	<link href="assets/css/demo.css" rel="stylesheet" />
+	<link href="./css/estilos.css" rel="stylesheet" />
 
 </head>
 
 <body class="index-page">
-<!-- Navbar -->
-<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
-	<div class="container">
-        <div class="navbar-header">
-	    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
-	        	<span class="sr-only">Toggle navigation</span>
-	        	<span class="icon-bar"></span>
-	        	<span class="icon-bar"></span>
-	        	<span class="icon-bar"></span>
-	    	</button>
-	    	<a href="index.html">
-	        	<div class="logo-container">
-	                <div class="logo">
-						<img src="assets/img/Mr.png" alt="Tutuaula"  data-placement="bottom" data-html="true">
-	                </div>
-	                <div class="brand">
-	                   
-	                </div>
 
-
-				</div>
-	      	</a>
-	    </div>
-
-	    <div class="collapse navbar-collapse" id="navigation-index">
-	    	<ul class="nav navbar-nav navbar-right">
-				<li>
-					<a href="test.html" class="btn">
+	<!-- Navbar -->
+	<!--Navbar -->
+	<nav class="mb-1 navbar navbar-expand-lg navbar-dark info-color">
+		<a class="navbar-brand" href="#">Inicio</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+			aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="Despensa.html">
 						<i class="material-icons">event_note</i> Despensa
+						<span class="sr-only">(current)</span>
 					</a>
 				</li>
-				<li>
-					<a href="profesores.html"  class="btn">
-						<i class="material-icons">local_dining</i> Recetas
-					</a>
+				<li class="nav-item">
+					<a class="nav-link" href="Recetas.html">
+						<i class="material-icons">local_dining</i> Recetas</a>
 				</li>
-				<li>
-					<!--	<li>
-								<a href="servicios.html"  class="btn">
-									<i class="material-icons">layers</i> Servicios
-								</a>
-							</li>
-							<li>
-				       -->
-						<li>
-								<a href="#" class="btn">
-									<i class="material-icons">emoji_people</i> Registro
-								</a>
-							</li>
-							<li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="material-icons">emoji_people</i> Registo</a>
 				</li>
-				
-				<li>
-					<a rel="tooltip" title="Login" data-placement="bottom" href="#"  class="btn btn-simple">
-						<i class="fa fa-user"></i>
-					</a>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false">
+						<i class="material-icons"></i> Profile </a>
+					<div class="dropdown-menu dropdown-menu-right dropdown-info"
+						aria-labelledby="navbarDropdownMenuLink-4">
+						<a class="dropdown-item" href="#">My account</a>
+						<a class="dropdown-item" href="#">Log out</a>
+					</div>
 				</li>
+			</ul>
+		</div>
+	</nav>
+	<!--/.Navbar -->
+	<!-- End Navbar -->
 
-	    	</ul>
-	    </div>
-	</div>
-</nav>
-<!-- End Navbar -->
+	<div class="wrapper">
+		<div class="header header-primary" style="background-image: url('assets/img/principal.png');">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-md-offset-2">
+						<div class="brand">
+						
+                                    <div class="d-flex justify-content-center h-100">
+                                            <div class="searchbar">
+                                              <input class="search_input" type="text" name="" placeholder="Busca Tu Receta...">
+                                              <a href="#" class="search_icon"><i class="material-icons">search</i></a>
+                                            </div>
+                                          </div>
+						
+						</div>
+					</div>
+				</div>
 
-<div class="wrapper">
-	<div class="header header-primary" style="background-image: url('assets/img/principal.png');">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<div class="brand">
-					
+			</div>
+		</div>
+
+		<div class="main main-raised">
+			<div class="section">
+
+				<div class="container">
+					<div class="row">
+						<div class="col-sm">
+							<div class="card" style="width: 20rem;">
+								<img class="card-img-top" src="assets/img/arroz-precocido.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h4 class="card-title">Card title</h4>
+									<p class="card-text">Some quick example text to build on the card title and make up
+										the bulk of the card's content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm">
+							<div class="card" style="width: 20rem;">
+								<img class="card-img-top" src="assets/img/arroz-rojo-f-cil.jpg.jpg"
+									alt="Card image cap">
+								<div class="card-body">
+									<h4 class="card-title">Card title</h4>
+									<p class="card-text">Some quick example text to build on the card title and make up
+										the bulk of the card's content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm">
+							<div class="card" style="width: 20rem;">
+								<img class="card-img-top tamaño_img" src="assets/img/hotcakes.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h4 class="card-title">Card title</h4>
+									<p class="card-text">Some quick example text to build on the card title and make up
+										the bulk of the card's content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-sm">
+							<div class="card" style="width: 20rem;">
+								<img class="card-img-top" src="assets/img/arroz-precocido.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h4 class="card-title">Card title</h4>
+									<p class="card-text">Some quick example text to build on the card title and make up
+										the bulk of the card's content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm">
+							<div class="card" style="width: 20rem;">
+								<img class="card-img-top" src="assets/img/arroz-rojo-f-cil.jpg.jpg"
+									alt="Card image cap">
+								<div class="card-body">
+									<h4 class="card-title">Card title</h4>
+									<p class="card-text">Some quick example text to build on the card title and make up
+										the bulk of the card's content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm">
+							<div class="card" style="width: 20rem;">
+								<img class="card-img-top tamaño_img" src="assets/img/hotcakes.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h4 class="card-title">Card title</h4>
+									<p class="card-text">Some quick example text to build on the card title and make up
+										the bulk of the card's content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-sm">
+							<div class="card" style="width: 20rem;">
+								<img class="card-img-top" src="assets/img/arroz-precocido.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h4 class="card-title">Card title</h4>
+									<p class="card-text">Some quick example text to build on the card title and make up
+										the bulk of the card's content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm">
+							<div class="card" style="width: 20rem;">
+								<img class="card-img-top" src="assets/img/arroz-rojo-f-cil.jpg.jpg"
+									alt="Card image cap">
+								<div class="card-body">
+									<h4 class="card-title">Card title</h4>
+									<p class="card-text">Some quick example text to build on the card title and make up
+										the bulk of the card's content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm">
+							<div class="card" style="width: 20rem;">
+								<img class="card-img-top tamaño_img" src="assets/img/hotcakes.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h4 class="card-title">Card title</h4>
+									<p class="card-text">Some quick example text to build on the card title and make up
+										the bulk of the card's content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-
 		</div>
-	</div>
-
-	<div class="main main-raised">
-		<div class="section"></div>
-	        <div class="container">
-				<!--EL de alexa-->
-				<div class="row ">
-						<h2 class="text-center"> <b>Recetas</b> </h2>
-						<div class="blogs-2" id="blogs-2"></div>
-							<div class="container">
-							  <div class="row">
-								<div class="col-md-10 ml-auto mr-auto">
-								  <h2 class="title">Latest Blogposts 2</h2>
-								  <br>
-								  <div class="row">
-									<div class="col-md-4">
-									  <div class="card card-plain card-blog">
-										<div class="card-header card-header-image">
-										  <a href="#pablo">
-											<img class="img img-raised" src="assets/img/arroz-rojo-f-cil.jpg.jpg">
-										  </a>
-										</div>
-										<div class="card-body">
-										  <h6 class="card-category text-info">Enterprise</h6>
-										  <h4 class="card-title">
-											<a href="#pablo">Autodesk looks to future of 3D printing with Project Escher</a>
-										  </h4>
-										  <p class="card-description">
-											Like so many organizations these days, Autodesk is a company in transition. It was until recently a traditional boxed software company selling licenses.
-											<a href="#pablo"> Read More </a>
-										  </p>
-										</div>
-									  </div>
-									</div>
-									<div class="col-md-4">
-									  <div class="card card-plain card-blog">
-										<div class="card-header card-header-image">
-										  <a href="#pablo">
-											<img class="img img-raised" src="/assets/img/arroz-precocido.jpg">
-										  </a>
-										</div>
-										<div class="card-body ">
-										  <h6 class="card-category text-success">
-											Startups
-										  </h6>
-										  <h4 class="card-title">
-											<a href="#pablo">Lyft launching cross-platform service this week</a>
-										  </h4>
-										  <p class="card-description">
-											Like so many organizations these days, Autodesk is a company in transition. It was until recently a traditional boxed software company selling licenses.
-											<a href="#pablo"> Read More </a>
-										  </p>
-										</div>
-									  </div>
-									</div>
-									<div class="col-md-4">
-									  <div class="card card-plain card-blog">
-										<div class="card-header card-header-image">
-										  <a href="#pablo">
-											<img class="img img-raised" src="./assets/img/a.jpg">
-										  </a>
-										</div>
-										<div class="card-body ">
-										  <h6 class="card-category text-danger">
-											<i class="material-icons">trending_up</i> Enterprise
-										  </h6>
-										  <h4 class="card-title">
-											<a href="#pablo">6 insights into the French Fashion landscape</a>
-										  </h4>
-										  <p class="card-description">
-											Like so many organizations these days, Autodesk is a company in transition. It was until recently a traditional boxed software company selling licenses.
-											<a href="#pablo"> Read More </a>
-										  </p>
-										</div>
-									  </div>
-									</div>
-								  </div>
-								</div>
-							  </div>
-							</div>
-						  </div>
-					</div>
-					<!-- fin -->
-
-
-	        </div>
-	    </div>
-	</div>
 
 	</div>
-    <footer class="footer">
-	    <div class="container">
-	        <nav class="pull-left">
-	            <ul>
+	<footer class="footer">
+		<div class="container">
+			<nav class="pull-left">
+				<ul>
 					<li>
 						<a href="#">
 							bygabano
@@ -202,12 +220,12 @@
 					</li>
 					<li>
 						<a href="#">
-						   Instagram
+							Instagram
 						</a>
 					</li>
 					<li>
 						<a href="#">
-						   Facebook
+							Facebook
 						</a>
 					</li>
 					<li>
@@ -215,59 +233,68 @@
 							Twitter
 						</a>
 					</li>
-	            </ul>
-	        </nav>
+				</ul>
+			</nav>
 
-	    </div>
+		</div>
 	</footer>
-</div>
+	</div>
 
-<!-- Sart Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-					<i class="material-icons">clear</i>
-				</button>
-				<h4 class="modal-title">Modal title</h4>
-			</div>
-			<div class="modal-body">
-				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
-				</p>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default btn-simple">Nice Button</button>
-				<button type="button" class="btn btn-danger btn-simple" data-dismiss="modal">Close</button>
+	<!-- Sart Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						<i class="material-icons">clear</i>
+					</button>
+					<h4 class="modal-title">Modal title</h4>
+				</div>
+				<div class="modal-body">
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+						live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
+						a large language ocean. A small river named Duden flows by their place and supplies it with the
+						necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly
+						into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an
+						almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum
+						decided to leave for the far World of Grammar.
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default btn-simple">Nice Button</button>
+					<button type="button" class="btn btn-danger btn-simple" data-dismiss="modal">Close</button>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<!--  End Modal -->
+	<!--  End Modal -->
 
 
 </body>
-	<!--   Core JS Files   -->
-	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
-	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="assets/js/material.min.js"></script>
+<!--   Core JS Files   -->
+<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.js" type="text/javascript"></script>
+<script src="assets/js/popper.min.js" type="text/javascript"></script>
+<script src="assets/js/material.min.js"></script>
 
-	<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-	<script src="assets/js/nouislider.min.js" type="text/javascript"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="assets/js/nouislider.min.js" type="text/javascript"></script>
 
-	<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
-	<script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
+<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
+<script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
 
-	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
-	<script src="assets/js/material-kit.js" type="text/javascript"></script>
+<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+<script src="assets/js/material-kit.js" type="text/javascript"></script>
 
 <script>
 
-		$().ready(function(){
+	$().ready(function () {
 
-			$(window).on('scroll', materialKit.checkScrollForTransparentNavbar);
+		$(window).on('scroll', materialKit.checkScrollForTransparentNavbar);
 
-		});
+	});
 
 </script>
+
 </html>
