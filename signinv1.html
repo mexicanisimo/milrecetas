@@ -1,0 +1,91 @@
+<html lang="en-Us">
+<head>
+
+  <meta charset="utf-8">
+    
+  <title>Registro</title>
+
+  <link rel="stylesheet" href="css/signin.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300'>
+
+  <!--[if lt IE 9]>
+    <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+
+  <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCYqXmvL76XP4EcaBkSfZ2nVLmYYECOcp8",
+    authDomain: "milrecetas-3bda6.firebaseapp.com",
+    databaseURL: "https://milrecetas-3bda6.firebaseio.com",
+    projectId: "milrecetas-3bda6",
+    storageBucket: "milrecetas-3bda6.appspot.com",
+    messagingSenderId: "920714233064",
+    appId: "1:920714233064:web:d8793f225949b31345f55d"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+</head>
+
+<body>
+
+  <div id="login">
+
+    <span id="Bienvenido"><h1><strong>Registro</strong></h1></span>
+
+    <form action="javascript:void(0);" method="get">
+
+      <fieldset>
+
+        <p><input type="email" required value="email" onBlur="if(this.value=='')this.value='email'" onFocus="if(this.value=='email')this.value='' " id="email"></p> <!-- JS because of IE support; better: placeholder="Username" -->
+
+        <p><input type="password" required value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' " id="pass"></p> <!-- JS because of IE support; better: placeholder="Password" -->
+
+          <p><input type="password" required value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' " id="pass2"></p> <!-- JS because of IE support; better: placeholder="Password" -->
+
+
+       
+
+        <!-- <p><a href="#">Forgot Password?</a></p> -->
+
+        <p><input type="submit" value="Registro" onclick="registrar()"></p>
+
+      </fieldset>
+
+    </form>
+
+    <p><span class="btn-round">ó</span></p>
+
+    <p>
+
+      <a class="facebook-before"><span class="fontawesome-facebook"></span></a>
+      <button class="facebook">Registrarse usando Facebook</button>
+
+    </p>
+
+    <p><a href="loginv1.html">Ya tienes cuenta?</a></p>
+
+   
+
+  </div> <!-- end login -->
+
+
+  <div id="contenido">
+    
+  </div>
+
+
+  <script src="js/firebase.js"></script>
+
+</body>
+</html>
