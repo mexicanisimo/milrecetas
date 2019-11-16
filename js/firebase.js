@@ -1,3 +1,24 @@
+//inicializar firebase 
+
+var firebaseConfig = {
+    apiKey: "AIzaSyCYqXmvL76XP4EcaBkSfZ2nVLmYYECOcp8",
+    authDomain: "milrecetas-3bda6.firebaseapp.com",
+    databaseURL: "https://milrecetas-3bda6.firebaseio.com",
+    projectId: "milrecetas-3bda6",
+    storageBucket: "milrecetas-3bda6.appspot.com",
+    messagingSenderId: "920714233064",
+    appId: "1:920714233064:web:d8793f225949b31345f55d"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+
+//funcion registrar
+
+
+
+
+
 
  function registrar(){
   console.log("se dio click");
@@ -26,7 +47,7 @@ if (password==password2) {
 	
 }
 
-
+/*
 	function listener(){
 	firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
@@ -44,6 +65,44 @@ if (password==password2) {
     alert("no hay alguien dentro");
   }
 });
+}
+*/
+
+function mostrarSignin(){
+   document.getElementById("login").style.display = "none";
+    document.getElementById("signin").style.display = "block";
+    document.getElementById("pantallaPrincipal").style.display = "none";
+}
+
+
+
+function listener(){
+  firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+
+    document.getElementById("login").style.display = "none";
+    document.getElementById("signin").style.display = "none";
+    document.getElementById("pantallaPrincipal").style.display = "block";
+
+    var user = firebase.auth().currentUser;
+
+    if(user != null){
+
+      var email_id = user.email;
+      document.getElementById("user_para").innerHTML = "Welcome User : " + email_id;
+
+    }
+
+  } else {
+    // No user is signed in.
+
+    document.getElementById("login").style.display = "block";
+    document.getElementById("signin").style.display = "none";
+    document.getElementById("pantallaPrincipal").style.display = "none";
+
+  }
+})
 }
 
 
@@ -106,12 +165,12 @@ console.log("saliendo");
 
 function entrarFacebook(){
 
-     alert("esta entrando a la funcion");
+     //alert("esta entrando a la funcion");
   
   
     const provider= new firebase.auth.FacebookAuthProvider();
       firebase.auth().signInWithPopup(provider).then(function(result){
-      alert("exito");
+      //alert("exito");
       console.log(result);
     })
     .catch(function(error){
