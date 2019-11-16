@@ -21,7 +21,7 @@
 /* ---------- GENERAL ---------- */
 
 body {
-	background: #ffe6ff;
+	background: #e5421f;
 	color: #5a5656;
 	font: 100%/1.5em 'Open Sans', sans-serif;
   margin: 0;
@@ -46,15 +46,19 @@ strong {
 #login {
 	margin: 50px auto;
 	width: 300px;
+	display: none;
 }
 
 #signin {
 	margin: 50px auto;
 	width: 300px;
+	display: none;
 }
-#Bienvenido{
+.tituloIn{
+	display: block;
 	text-align: center;
 	font-size: 30px;
+	margin-bottom: 20px;
 }
 #crearCuenta{
 	background-color: #000000;
