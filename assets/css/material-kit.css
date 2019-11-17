@@ -2732,13 +2732,6 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   padding-top: 20vh;
 }
 
-.noUi-target,
-.noUi-target * {
-  -webkit-touch-callout: none;
-  -ms-touch-action: none;
-  user-select: none;
-  box-sizing: border-box;
-}
 
 .noUi-base {
   width: 100%;
