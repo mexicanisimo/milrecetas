@@ -28,13 +28,7 @@ a {
   .info p {
     margin-top: 20px; }
 
-.formulario {
-  /* --------------------------------------- */
-  /* ----- Radio Button */
-  /* --------------------------------------- */
-  /* --------------------------------------- */
-  /* ----- Checkbox */
-  /* --------------------------------------- */ }
+
   .formulario h2 {
     font-size: 16px;
     color: #ffffff;
@@ -703,3 +697,23 @@ a {
 }
 
 
+.personalizado{
+  text-decoration: none;
+  padding: 8px;
+  font-weight: 400;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #808000;
+  border-radius: 6px;
+  border: 2px solid #808000;
+}
+.personalizado:hover{
+  color: #1883ba;
+  background-color: #ffffff;
+}
+.colorbac1{
+  background-color: #E6E6E6;
+}
+.colorbac2{
+  background-color: #CCCCCC;
+}

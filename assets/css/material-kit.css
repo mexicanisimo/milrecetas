@@ -91,7 +91,7 @@ a .material-icons, a:hover .material-icons, a:focus .material-icons {
   letter-spacing: 0;
   will-change: box-shadow, transform;
   transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  background: transparent;
+  background: #08CC5B;
 }
 .btn::-moz-focus-inner,
 .input-group-btn .btn::-moz-focus-inner {
@@ -112,7 +112,7 @@ a .material-icons, a:hover .material-icons, a:focus .material-icons {
 }
 .btn:not(.btn-raised).btn-primary,
 .input-group-btn .btn:not(.btn-raised).btn-primary {
-  color: #9c27b0;
+  color: #212529;
 }
 .btn:not(.btn-raised).btn-success,
 .input-group-btn .btn:not(.btn-raised).btn-success {
@@ -2732,13 +2732,6 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   padding-top: 20vh;
 }
 
-.noUi-target,
-.noUi-target * {
-  -webkit-touch-callout: none;
-  -ms-touch-action: none;
-  user-select: none;
-  box-sizing: border-box;
-}
 
 .noUi-base {
   width: 100%;
@@ -3574,7 +3567,7 @@ h2.title {
 }
 
 .index-page .wrapper > .header {
-  height: 90vh;
+  height: 70vh;
 }
 .index-page .brand {
   margin-top: 15vh;
