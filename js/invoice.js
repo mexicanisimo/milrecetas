@@ -3,8 +3,9 @@ $(document).on('ready', funcMain);
 
 function funcMain()
 {
-	$("#add_row").on('click',newRowTable);
-	$("#add_pasos").on('click',newRowCard);
+	$("#add_row").on('click',addIngrediente);
+	$("#add_pasos").on('click',addPaso);
+	$("#guardarReceta").on('click',guardarReceta);
 
 	$("loans_table").on('click','.fa-eraser',deleteProduct);
 	$("loans_table").on('click','.fa-edit',editProduct);
@@ -23,6 +24,12 @@ function funcEliminarProductosso(){
 	console.log(a);
 
 	$(this).parent().parent().fadeOut("slow",function(){$(this).remove();});
+}
+
+
+function guardarReceta() {
+	var nombreReceta=document.getElementById("nombreReceta").value;
+	console.log(nombreReceta);
 }
 
 
@@ -63,13 +70,39 @@ function getRowSelected(objectPressed){
 	//console.log(numero+' '+codigo+' '+descripcion);
 }
 
+function addIngrediente(){
+	var ingrediente =[];
+var cant=document.getElementById("cantidad").value;
+var medida=document.getElementById("medida").value;
+var ingrediente=document.getElementById("ingrediente").value;
+if(cant!=0 && medida!=null && ingrediente!=null){
+	newRowTable(cant, medida, ingrediente);
+}else{
+	alert("No puedes dejar campos vacios");
+}
+}
 
 
-function newRowTable()
+
+function addPaso(){
+	var pasos = document.getElementById("pasos").value;
+	if (pasos!=null && pasos != "") {
+		newRowCard(pasos);
+	}else{
+		alert("no has agregado ningun paso");
+	}
+	
+}
+
+
+function newRowTable(cant, med, ing)
 {
-	var cantidad=document.getElementById("cantidad").value;
-	var medida=document.getElementById("medida").value;
-	var ingrediente=document.getElementById("ingrediente").value;
+	var ingrediente=[];
+	var arrayingredientes = [];
+	
+	ingrediente[0]=cant;
+	ingrediente[1]=med;
+	ingrediente[2]=ing;
 
 	var name_table=document.getElementById("ingredientes");
 
@@ -78,21 +111,39 @@ function newRowTable()
     var cell2 = row.insertCell(1);
     var cell3 = row.insertCell(2);
 
-    cell1.innerHTML = '<p name="cant_f[]" class="non-margin">'+cantidad+'</p>';
-    cell2.innerHTML = '<p name="med_p[]" class="non-margin">'+medida+'</p>';
-    cell3.innerHTML = '<p name="ingre_p[]" class="non-margin">'+ingrediente+'</p>';
+    arrayingredientes.push(ingrediente);
+   limpiarCampoIngrediente();
+
+    cell1.innerHTML = '<p name="cant_f[]" class="non-margin">'+ingrediente[0]+'</p>';
+    cell2.innerHTML = '<p name="med_p[]" class="non-margin">'+ingrediente[1]+'</p>';
+    cell3.innerHTML = '<p name="ingre_p[]" class="non-margin">'+ingrediente[2]+'</p>';
     cell4.innerHTML = '<span class="icon fa-edit"></span><span class="icon fa-eraser"></span>';
 
 }
 
-function newRowCard()
+
+function limpiarCampoIngrediente(){
+	document.getElementById("cantidad").value="";
+	//document.getElementById("medida").value="seleccionar";
+	document.getElementById("ingrediente").value="";
+}
+
+function limpiarCampoPasos(){
+	document.getElementById("pasos").value="";
+}
+
+function newRowCard(pasos)
 {
-	var pasos=document.getElementById("pasos").value;
+	var procedimiento=[];
+	procedimiento.push(pasos);
+	//var pasos=document.getElementById("pasos").value;
+
 
 	var name_table=document.getElementById("paso");
 
     var row = name_table.insertRow(0+1);
     var cell1 = row.insertCell(0);
+    limpiarCampoPasos();
 
     cell1.innerHTML = '<p name="cant_f[]" class="non-margin" >'+pasos+'</p>';
     cell2.innerHTML = '<span class="icon fa-edit"></span><span class="icon fa-eraser"></span>';

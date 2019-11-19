@@ -70,9 +70,14 @@ if (password==password2) {
 
 function mostrarSignin(){
    document.getElementById("login").style.display = "none";
-    document.getElementById("signin").style.display = "block";
-    document.getElementById("pantallaPrincipal").style.display = "none";
+    document.getElementById("signin").style.display = "none";
+   
+ 
 }
+
+
+  
+
 
 
 
@@ -83,7 +88,7 @@ function listener(){
 
     document.getElementById("login").style.display = "none";
     document.getElementById("signin").style.display = "none";
-    document.getElementById("pantallaPrincipal").style.display = "block";
+    window.location.href = "chantal.html";
 
     var user = firebase.auth().currentUser;
 
@@ -99,7 +104,6 @@ function listener(){
 
     document.getElementById("login").style.display = "block";
     document.getElementById("signin").style.display = "none";
-    document.getElementById("pantallaPrincipal").style.display = "none";
 
   }
 })
@@ -132,6 +136,8 @@ console.log("saliendo");
 
 }
  
+
+/* 
  function aparece(user){
   var user=user;
   if (user.emailVerified) {
@@ -142,7 +148,7 @@ console.log("saliendo");
   `
   }
  
- }
+ }*/
 
 
 
