@@ -29,7 +29,21 @@ function funcEliminarProductosso(){
 
 function guardarReceta() {
 	var nombreReceta=document.getElementById("nombreReceta").value;
-	console.log(nombreReceta);
+	var propPersonas=document.getElementById("propPersonas").value;
+	var tiempoEstimado=document.getElementById("tiempoEstimado").value;
+	try{
+		if((nombreReceta==null || nombreReceta=="") || (propPersonas==null || propPersonas=="") || (tiempoEstimado==null || tiempoEstimado=="")){
+			throw{
+				name: 'yoquese',
+				message: 'Asegurate de llenar todos los campos'
+			}
+		}
+		
+
+
+	}catch(error){
+		alert(error.message);
+	}
 }
 
 
