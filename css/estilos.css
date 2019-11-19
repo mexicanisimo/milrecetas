@@ -717,3 +717,122 @@ a {
 .colorbac2{
   background-color: #CCCCCC;
 }
+
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #212529;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.colorbac{
+  background-color: #168AFD;
+}
+
+.colorbac1{
+  background-color: #FAFAFA
+}
+
+.colorbac2{
+  background-color: #00B34F;
+}
+
+
+
+.colorbac3{
+  background-color: #CC5D50;
+}
+.colorbac4{
+  background-color: #F0F0F0;
+}
+.titlecolor{
+  text-align: center;
+  padding: 5px;
+  color:  #168AFD;
+  font-weight: bold;
+}
+.texto{
+  color: #ffffff;
+  text-align: center;
+}
+.texto1{
+  color: #00B34F;
+  text-align: center;
+}
+.texto2{
+  color:#0F0F0F;
+  text-align: center;
+}
+.textocard{
+  color: #ffffff;
+  text-align: center;
+}
+.bodycard{
+  background-color: #168AFD;
+}
+.sidebar-header {
+  padding: 30px;
+  overflow: hidden;
+}
+
+.user-pic {
+  float: left;
+  width: 60px;
+  padding: 2px;
+  border-radius: 12px;
+  margin-right: 15px;
+  overflow: hidden;
+}
+.sidebar-dropdown > a:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f105";
+  font-style: normal;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background: 0 0;
+  position: absolute;
+  right: 15px;
+  top: 14px;
+}
+.sidebar-search > div {
+  padding: 10px 20px;
+}

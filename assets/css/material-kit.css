@@ -1102,6 +1102,7 @@ output {
   box-shadow: none;
   border-radius: 0;
   font-weight: 400;
+  padding-left: 15px;
 }
 .form-control::-moz-placeholder,
 .form-group .form-control::-moz-placeholder {

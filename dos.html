@@ -1,0 +1,124 @@
+<html lang="en-Us">
+<head>
+
+  <meta charset="utf-8">
+    
+  <title>Iniciar Sesion</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300'>
+
+  <!--[if lt IE 9]>
+    <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+
+</head>
+
+<body>
+
+  <div id="contenido">
+    <div id="login">
+
+   <span id="titulologin" class="tituloIn"><h1><strong>Iniciar Sesión</strong></h1></span> 
+
+    <form action="javascript:void(0);" method="get">
+
+      <fieldset>
+
+        <p><input type="email" required value="email" onBlur="if(this.value=='')this.value='email'" onFocus="if(this.value=='email')this.value='' " id="emailR"></p> <!-- JS because of IE support; better: placeholder="Username" -->
+
+        <p><input type="password" required value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' " id="passR"></p> <!-- JS because of IE support; better: placeholder="Password" -->
+
+
+       
+
+        <p><input class="btn btn-warning" type="submit" value="Entrar" onclick="iniciarSesion()"></p>
+
+      </fieldset>
+
+    </form>
+
+    <p><span class="btn-round">O</span></p>
+
+    <p>
+
+      <a class="facebook-before"><span class="fontawesome-facebook"></span></a>
+      <button class="facebook" onclick="entrarFacebook()" >iniciar sesion con Facebook</button>
+
+    </p>
+
+
+
+    <p><input type="submit" value="Crear Cuenta" id="crearCuenta" onclick="mostrarSignin()"></p>
+
+
+   
+ 
+
+  </div> <!-- end login -->
+
+
+
+
+  <!--------------------------------------------------------------------------------->
+   <div id="signin">
+
+    <span id="titulosignin" class="tituloIn"><h1><strong>Registro</strong></h1></span>
+
+    <form action="javascript:void(0);" method="get">
+
+      <fieldset>
+
+        <p><input type="email" required value="email" onBlur="if(this.value=='')this.value='email'" onFocus="if(this.value=='email')this.value='' " id="email"></p> <!-- JS because of IE support; better: placeholder="Username" -->
+
+        <p><input type="password" required value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' " id="pass"></p> <!-- JS because of IE support; better: placeholder="Password" -->
+
+          <p><input type="password" required value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' " id="pass2"></p> <!-- JS because of IE support; better: placeholder="Password" -->
+
+
+       
+
+        <!-- <p><a href="#">Forgot Password?</a></p> -->
+
+        <p><input type="submit" value="Registro" onclick="registrar()"></p>
+
+      </fieldset>
+
+    </form>
+
+    <p><span class="btn-round">ó</span></p>
+
+    <p>
+
+      <a class="facebook-before"><span class="fontawesome-facebook"></span></a>
+      <button class="facebook " onclick="entrarFacebook()">Registrarse usando Facebook</button>
+
+    </p>
+
+    <p><a href="loginv1.html">Ya tienes cuenta?</a></p>
+
+   
+
+  </div> <!-- end signin -->
+
+
+  <div id="pantallaPrincipal">
+    <button onclick="cerrarSesion()" style='width:100px; height:25px' value="cerrar sesion" >Cerrar sesion</button>
+  </div>
+
+  </div>    <!--fin dev contenido--->
+
+  
+
+  <script src="js/firebase.js"></script>
+
+</body>
+</html>
