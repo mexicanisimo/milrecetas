@@ -37,24 +37,21 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent-4">
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="Despensa.html">
+				<li class="nav-item ">
+					<a class="nav-link" href="alex.html">
 						<i class="material-icons">event_note</i> Despensa
 						<span class="sr-only">(current)</span>
 					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="CreaReceta.html">
+					<a class="nav-link active" href="chantal.html">
 						<i class="material-icons">local_dining</i> Crea tu receta</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="Recetas.html">
+					<a class="nav-link" href="index.html">
 						<i class="material-icons">local_dining</i> Recetas</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">
-						<i class="material-icons">emoji_people</i> Registro</a>
-				</li>
+			
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
 						aria-haspopup="true" aria-expanded="false">
@@ -75,128 +72,127 @@
      <h2><b>Crea tu receta</b></h2>
      </div>
   </div>
-    <div class="container colorbac1">
-        <div class="row ">
-            <!-- Ingredientes-->
-            <div class="col-md-4">
-                <div class="text-center my-4">
-                    <h5><b>Ingredientes</b></h5>
-                    <div class="m-4">
-                        <input type="textbox" class="form-control" id="cantidad" name="cantidad" placeholder="cantidad">
-                        <select class="form-control" id="medida">
-                            <option value="L" checked>Litro</option>
-                            <option value="kl">Kilolitro</option>
-                            <option value="hl">Hectolitro</option>
-                            <option value="dal">Decalitro</option>
-                            <option value="dl">Decilitro</option>
-                            <option value="cl">Centilitro</option>
-                            <option value="ml">Mililitro</option>
-                            <option value="kg">Kilogramo</option>
-                            <option value="hg">Hectogramo</option>
-                            <option value="dag">Decagramo</option>
-                            <option value="gr">Gramo</option>
-                            <option value="dg">Decagramo</option>
-                            <option value="cg">Centigrado</option>
-                            <option value="mg">Mligramo</option>
-                            <option value="lb">Libra</option>
-                            <option value="oz">Onza</option>
-                            <option value="cu">Cucharada</option>
-                            <option value="cc">Cucharadita</option>
-                            <option value="ta">Taza</option>
-                            <option value="tz">Tazón</option>
-                            <option value="tc">Tacita</option>
-                            <option value="pi">Pinta</option>
-                            <option value="va">Vaso</option>
-                            <option value="vp">Vaso pequeño</option>
-                            <option value="vc">Chupito</option>
-                            <option value="cp">Copa</option>
-                            <option value="NA">No aplica</option>
-                        </select>
-                        <input type="textbox" class="form-control" id="ingrediente" name="ingrediente"
-                            placeholder="Ingrediente">
-                        <br>
-                        <input class="personalizado" type="button" name="agregar" value="Agregar Ingrediente" id="add_row">
-                        <br><br>
-                        <table id="ingredientes">
-                            <thead>
-                                <tr>
-                                    <th class="small"><b>Cantidad||</b></th>
-                                    <th class="small"><b>Medida||</b></th>
-                                    <th class="small"><b>Ingrediente</b></th>
-                                </tr>
-                            </thead>
-                            <tbody id="content_table">
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <!-- La de receta-->
-        <div class="col-md-8">
-            <section class="servicios d-flex align-items-center justify-content-around">
-                <div class="receta">
-                    <label for="name" class="control-label text-dark">Nombre receta</label>
-                    <input type="textbox" class="form-control" id="rec" name="receta" maxlength="30">
-                </div>
-                <div class="proporcion">
-                    <label for="name" class="control-label text-dark">Proporción personas</label>
-                    <input type="textbox" class="form-control" id="rec" name="receta" maxlength="30" placeholder="5 personas">
-                </div>
-                <div class="etiqueta">
-                    <label for="name" class="control-label text-dark">Tiempo estimado de preparación</label>
-                    <input type="textbox" class="form-control" id="rec" name="receta" placeholder="30 minutos">
-                </div>
-             </section>
-            <div class="row" >
-                    <div class="mx-auto">
-                           <input class=" personalizado" type="submit" name="agregar"
-                                value="Guardar Receta"></a>
-                    </div>
-            </div>
-        <div class="row">
-            <div class="col-4 m-.5 colorbac4">
-                <div class="text-center my-4">
-                    <h5><b>Instrucciones</b></h5>
-                    <br>
-                    <p class="text-left">Inserte un paso a la vez</p>
-                    <input type="texto2" class="form-control" id="pasos" name="pasos" placeholder="pasos">
-                    <input class=" personalizado text-center" name="agregarpaso" value="Agregar Paso" id="add_pasos">
-                </div>
-            </div>
-            <br><br>
-            <div class="col-8 m-.5 bg-white">
-                <table id="paso">
-                    <thead>
-                        <tr>
-                           <th><b>
-                           <H5>Instrucción</H5>
-                            </b></th>
-                        </tr>
-                    </thead>
-                    <tbody id="content_table">
-                        <tr>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
-        
-                <br>
-        
-            </div>
-           </div>
-        </div>
-        </div>
-        </div>
-        </div>
-	
 
-        
+
+
+      <div class="col-xs-12 ">
+        <nav>
+          <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Primer paso</a>
+            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Ingredientes</a>
+            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Pasos receta</a>
+          </div>
+        </nav>
+        <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+              <section class="servicios d-flex align-items-center justify-content-around">
+                  <div class="receta">
+                          
+                      <label for="name" class="control-label text-dark">Nombre receta</label>
+                      <input type="textbox" class="form-control" id="Nombrereceta" name="Nombrereceta" maxlength="30" placeholder="cantidad">
+                  </div>
+                  <div class="proporcion">
+                      <label for="name" class="control-label text-dark">Proporción personas</label>
+                      <input type="textbox" class="form-control" id="Proporcion" name="receta" maxlength="30" placeholder="5 personas">
+                  </div>
+                  <div class="etiqueta">
+                      <label for="name" class="control-label text-dark">Tiempo estimado de preparación</label>
+                      <input type="textbox" class="form-control" id="tiempo" name="receta" placeholder="30 minutos">
+                  </div>
+               </section>
+               <div class="mx-auto">
+               <input class=" personalizado" type="submit" name="agregar"   onclick="obteneReceta()" value="Guardar Receta"></a>
+              </div>
+          </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+              <div class="col col-md-6 offset-md-3">
+                  <div class="text-center my-4">
+                      <h5><b>Ingredientes</b></h5>
+                      <div class="m-4">
+                         <input type="textbox" class="form-control" id="ingrediente" name="ingrediente"
+                              placeholder="Ingrediente"> 
+                          
+                              <input type="textbox" class="form-control" id="cantidad" name="cantidad" placeholder="cantidad">
+                  
+                            
+                              <select class="form-control" id="medida">
+                              <option value="L" checked>Litro</option>
+                              <option value="kl">Kilolitro</option>
+                              <option value="hl">Hectolitro</option>
+                              <option value="dal">Decalitro</option>
+                              <option value="dl">Decilitro</option>
+                              <option value="cl">Centilitro</option>
+                              <option value="ml">Mililitro</option>
+                              <option value="kg">Kilogramo</option>
+                              <option value="hg">Hectogramo</option>
+                              <option value="dag">Decagramo</option>
+                              <option value="gr">Gramo</option>
+                              <option value="dg">Decagramo</option>
+                              <option value="cg">Centigrado</option>
+                              <option value="mg">Mligramo</option>
+                              <option value="lb">Libra</option>
+                              <option value="oz">Onza</option>
+                              <option value="cu">Cucharada</option>
+                              <option value="cc">Cucharadita</option>
+                              <option value="ta">Taza</option>
+                              <option value="tz">Tazón</option>
+                              <option value="tc">Tacita</option>
+                              <option value="pi">Pinta</option>
+                              <option value="va">Vaso</option>
+                              <option value="vp">Vaso pequeño</option>
+                              <option value="vc">Chupito</option>
+                              <option value="cp">Copa</option>
+                              <option value="una">una</option>
+                              <option value="un">un</option>
+                              <option value="pieza">pieza</option>
+                              <option value="NA">No aplica</option>
+                          </select>
+  
+                          
+                          <input class="personalizado"  onclick="enviarIngredientereceta()" type="button" name="agregar" value="Agregar Ingrediente" id="add_row">
+                          <br><br>
+                          <table id="ingredientes"> 
+                              <thead>
+                                  <tr>
+                                      <th class="small"><b>Cantidad||</b></th>
+                                      <th class="small"><b>Medida||</b></th>
+                                      <th class="small"><b>Ingrediente</b></th>
+                                  </tr>
+                              </thead>
+                              <tbody id="content_table">
+                                  <tr>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+              <div class="col col-md-6 offset-md-3">
+                  <div class="text-center my-4">
+                      <h5><b>Instrucciones</b></h5>
+                      <br>
+                      <p class="text-left">Inserte un paso a la vez</p>
+                      <input type="texto2" class="form-control" id="pasos" name="pasos" placeholder="pasos">
+                      <input class=" personalizado text-center" type="submit" name="agregarpaso" value="Agregar Paso" id="add_pasos"  onclick="pasosReceta()"></a>
+                      
+                  <!--<input class=" personalizado text-center" name="agregarpaso" value="Agregar Paso" id="add_pasos">
+                     -->
+                  </div>
+              </div>  </div>
+         
+        </div>
+
+</div>
+
+
+
+   
+                 
 
 
 
@@ -217,6 +213,7 @@
 
 <!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
 <script src="assets/js/material-kit.js" type="text/javascript"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
 
 <script>
 
@@ -235,6 +232,135 @@
 		document.getElementById("mySidebar").style.width = "0";
 		document.getElementById("main").style.marginLeft = "0";
 	}
+
+    // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCYqXmvL76XP4EcaBkSfZ2nVLmYYECOcp8",
+    authDomain: "milrecetas-3bda6.firebaseapp.com",
+    databaseURL: "https://milrecetas-3bda6.firebaseio.com",
+    projectId: "milrecetas-3bda6",
+    storageBucket: "milrecetas-3bda6.appspot.com",
+    messagingSenderId: "920714233064",
+    appId: "1:920714233064:web:d8793f225949b31345f55d"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.database();
+// esta funcion loque hace es obtener el element id
+
+//funcion de json 
+ function arrayJson(ingrediente){
+   
+   var data={ 
+    // numero : numero,
+     Ingrediente: ingrediente
+   };
+   return data;
+ }
+
+function inputInserta(id, resultado){
+  return document.getElementById(id).value=resultado;
+}
+//INSERTAMOS INGREDIENTES
+function enviarIngredientereceta(){
+  ingredientes=new Array();
+  var ingrediente= document.getElementById("ingrediente").value
+  var cantidad= document.getElementById("cantidad").value
+  var medida= document.getElementById("medida").value
+  if(ingrediente.length==0  && Cantidad.length==0  && medida.length==0  ){
+    alert("El campo esta vacio");
+  }else{
+    var ingredientesreceta=ingredientesJson(ingrediente, cantidad,medida)
+    var ref = firebase.database().ref('Recetas/2/Ingredientes/');
+    ref.once("value")
+    .then(function(snapshot) {
+   
+    var elemento = snapshot.child("2/").val(); 
+    var tam= elemento.length
+    console.log(tam)
+    var inserta= firebase.database().ref("Recetas/2/Ingredientes/2");
+    //elemento.push(ingrediente)
+    inserta.set(ingredientesreceta) 
+   
+ });  
+  }
+} 
+
+// Agregamos paso
+
+function pasosReceta(){
+  var pasos = document.getElementById("pasos").value
+  if(pasos.length==0){
+    alert("El campo esta vacio");
+  }else{
+    var ref = firebase.database().ref('Recetas/1/');
+    ref.once("value")
+    .then(function(snapshot) {
+    var elemento = snapshot.child("pasos/").val(); 
+    var inserta= firebase.database().ref("Recetas/1/pasos/");
+    console.log(elemento)
+    elemento.push(pasos)
+    inserta.set(elemento) 
+    elemento.forEach(element => console.log(elemento));
+ });  
+  }
+} 
+
+// CREAR RECETA
+function obteneReceta(){
+  ingredientes=new Array();
+  var nombrereceta= document.getElementById("Nombrereceta").value
+  var Cantidad= document.getElementById("cantidad").value
+  var medida= document.getElementById("medida").value
+  var ingrediente= document.getElementById("ingrediente").value
+  var porcion= document.getElementById("Proporcion").value
+  var tiempo= document.getElementById("tiempo").value
+  var pasos = document.getElementById("pasos");
+  var nombrereceta= document.getElementById("Nombrereceta").value
+  var porcion= document.getElementById("Proporcion").value
+  var tiempo= document.getElementById("tiempo").value
+  if(ingrediente.length==0  && Cantidad.length==0  && medida.length==0){
+    alert("El campo esta vacio");
+  }else{
+    // console.log(ingrediente)
+   // console.log(Cantidad)
+   // console.log(medida)
+   var ref = firebase.database().ref('Recetas/');
+    ref.once("value")
+    .then(function(snapshot) {
+    var elemento = snapshot.child("11/Ingredientes/2").val(); 
+    var inserta= firebase.database().ref("Recetas/1/Ingredientes/2");
+   //console.log(arrayDato);
+   elemento.push(elemento)
+
+   // inserta.set(arrayDato) 
+   // inserta.set(arrayDato) 
+    elemento.forEach(element => console.log(elemento));
+ });  
+  }
+} 
+function arrayJson(Nombrereceta, Despensa, Estatus, Fecha, Porciones_comida,foto, pasos){
+   var data={
+    NombreReceta : NombreReceta,
+    Descripcion : Descripcion,
+    Estatus : Estatus,
+    Fecha : Fecha,
+    NombreReceta : NombreReceta,
+    Porciones_comida : Porciones_comida,
+    foto : foto,
+    Ingrediente: Ingrediente,
+    pasos: pasos,
+   };
+   return data;
+ }
+ function ingredientesJson(cantidad, nombre, medida){
+   var data={
+    cantidad : cantidad,
+    nombre : nombre,
+    medida : medida,
+   };
+   return data;
+ }
 </script>
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
